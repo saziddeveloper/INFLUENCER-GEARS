@@ -8,7 +8,7 @@ body {
 }
 
 /*------------------------------
-    End Shared CSS 
+        End Shared CSS 
 ------------------------------*/
 
 
@@ -19,13 +19,103 @@ body {
 
 
 /*-------------------------------------
-    Start Header Section CSS 
+        Start Header Section CSS 
 -------------------------------------*/
 
+header {
+    max-width: 1160px;
+    margin: 20px auto;
+}
 
+/*---- nav-bar ----*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+#nav-title {
+    font-weight: 700;
+    color: #3A3A3A;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li .nav-item {
+    text-decoration: none;
+    font-weight: 500;
+    color: #3A3A3A;
+}
+nav ul li .nav-item:hover {
+    text-decoration: underline;
+}
+.nav-item-icon {
+    color: #3A3A3A;
+    font-size: 22px;
+    position: relative;
+    top: -5px;
+}
+nav ul li .nav-item-icon:hover {
+    color: steelblue;
+}
+
+/*----- banner -----*/
+header section {
+    display: flex;
+    gap: 150px;
+    margin: 25px 0;
+}
+header section aside:first-child {
+    margin: auto 0;
+}
+#header-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#header-description {
+    font-weight: 500;
+    color: #3A3A3A;
+    margin-bottom: 20px;
+}
+#header-btn {
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-weight: 700;
+    border: 0;
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+.bi-arrow-right {
+    font-size: 18px;
+}
+header section aside:last-child {
+    background-image: url(../images/Circle\ design.svg);
+}
+#header-image {
+    position: relative;
+    top: 30px;
+}
+/*----- sponser -----*/
+header article {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    box-shadow: 0.1px 0.1px 20px 0px #eeecec;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 20px;
+}
 
 /*------------------------------------
-    End Header Section CSS 
+        End Header Section CSS 
 ------------------------------------*/
 
 
@@ -36,13 +126,13 @@ body {
 
 
 /*-------------------------------------
-    Start Main Section CSS 
+        Start Main Section CSS 
 -------------------------------------*/
 
 
 
 /*------------------------------------
-    End Main Section CSS 
+        End Main Section CSS 
 ------------------------------------*/
 
 
@@ -53,13 +143,13 @@ body {
 
 
 /*-------------------------------------
-    Start Footer Section CSS 
+        Start Footer Section CSS 
 -------------------------------------*/
 
 
 
 /*------------------------------------
-    End Footer Section CSS 
+        End Footer Section CSS 
 ------------------------------------*/
 
 
@@ -70,16 +160,62 @@ body {
 
 
 /*-------------------------------------------
-    Start  Media-QUERY Mobile CSS 
+        Start  Media-QUERY Mobile CSS 
 -------------------------------------------*/
 
 @media only screen and (max-width: 720px) {
     /*---- header section ----*/
+    header {
+        padding: 0 10px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-title {
+        margin-top: 0;
+    }
+    nav ul {
+        gap: 15px;
+        margin-left: -40px;
+    }
+    /*----- banner -----*/
+    header section {
+        display: flex;
+        gap: 40px;
+        margin: 25px 0;
+        flex-direction: column;
+    }
+    header section aside:last-child {
+        background-image: url(../images/Circle design.svg);
+        background-size: 100%;
+    }
+    #header-image {
+        position: relative;
+        top: 10px;
+        width: 100%;
+    }
 
+    /*----- sponser -----*/
+    header article {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        .item {
+            grid-column: 1 / span 3;
+        }
+        row-gap: 40px;
+        .item {
+            margin: 0 auto;
+        }
+    }
+    .sponsor {
+        width: 80px;
+    }
 }
 
 /*----------------------------------------
-    End  Media-QUERY Mobile CSS 
+        End  Media-QUERY Mobile CSS 
 ----------------------------------------*/
 
 
@@ -93,14 +229,39 @@ body {
 
 
 /*-------------------------------------------
-    Start  Media-QUERY Tablet CSS 
+        Start  Media-QUERY Tablet CSS 
 -------------------------------------------*/
 
 @media screen and (min-width: 721px) and (max-width: 1080px) {
     /*---  header css  ----*/
+    header {
+        padding: 0 10px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header section {
+        display: flex;
+        gap: 40px;
+        margin: 25px 0;
+    }
+    header section aside:last-child {
+        background-image: url(../images/Circle design.svg);
+        background-size: 100%;
+    }
+    #header-image {
+        position: relative;
+        top: 10px;
+    }
     
+    /*----- sponser -----*/
+    .sponsor {
+        width: 70px;
+    }
 }
 
 /*-------------------------------------------
-     End Media-QUERY Tablet CSS 
+        End Media-QUERY Tablet CSS 
 -------------------------------------------*/
