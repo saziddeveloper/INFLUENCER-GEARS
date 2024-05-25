@@ -84,12 +84,15 @@ header section aside:first-child {
     margin-bottom: 20px;
 }
 #header-btn {
-    color: #FFFFFF;
     background-color: #E02C6D;
     font-weight: 700;
     border: 0;
     border-radius: 20px;
     padding: 6px 20px;
+}
+#header-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 .bi-arrow-right {
     font-size: 18px;
@@ -106,7 +109,7 @@ header article {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     box-shadow: 0.1px 0.1px 20px 0px #eeecec;
     border-radius: 8px;
     display: flex;
@@ -129,6 +132,80 @@ header article {
         Start Main Section CSS 
 -------------------------------------*/
 
+/*--- popular collection ---*/
+#article-1 {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+#article-1-container {
+    margin-bottom: 50px;
+}
+#article-1-title {
+    font-weight: 500;
+    color: #3A3A3A;
+    margin-bottom: 40px;
+}
+#article-1-container section:last-child {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    text-align: start;
+}
+.popular-collection-item {
+    box-shadow: 0.1px 0.1px 20px 0px #eeecec;
+    padding: 10px;
+}
+.item-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: #18191F;
+    margin: 10px 0;
+}
+.item-price {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #00000086;
+    margin: 10px 0;
+}
+.rating {
+    display: flex;
+    gap: 13px;
+    margin: 0 0;
+}
+.rating-star {
+    font-size: 14px;
+    color: #FB8200;
+}
+.rating-number {
+    font-weight: 700;
+    color: #5E6366;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.item-description {
+    width: 200px;
+    font-family: "Inter", sans-serif;
+    margin-top: 5px;
+    color: #787885;
+    font-weight: 700;
+    font-size: 14px;
+}
+#popular-collection-btn {
+    position: relative;
+    left: 510px;
+
+}
+#article-1-btn {
+    color: #E02C6D;
+    background-color: #fff;
+    font-weight: 900;
+    border: 0;
+}
+#article-1-btn a {
+    color: #E02C6D;
+    text-decoration: none;
+}
 
 
 /*------------------------------------
@@ -212,6 +289,21 @@ header article {
     .sponsor {
         width: 80px;
     }
+
+    /*----- populer collection -----*/
+    #article-1-container section:last-child {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+    .popular-collection-item {
+        padding: 10px 30px;
+    }
+    #popular-collection-btn {
+        position: relative;
+        left: 0;
+        text-align: end;
+    }
 }
 
 /*----------------------------------------
@@ -259,6 +351,22 @@ header article {
     /*----- sponser -----*/
     .sponsor {
         width: 70px;
+    }
+    /*--- .popular-collection ---*/
+    #article-1-container section:last-child {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        text-align: start;
+        margin: 0 10px;
+    }
+    .popular-collection-item {
+        padding: 10px 30px;
+    }
+    #popular-collection-btn {
+        position: relative;
+        left: 0;
+        text-align: end;
     }
 }
 
