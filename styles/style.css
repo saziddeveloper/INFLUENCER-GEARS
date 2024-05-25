@@ -206,7 +206,34 @@ header article {
     color: #E02C6D;
     text-decoration: none;
 }
-
+/*--- article-2 ---*/
+#article-2 {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+#article-2-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0A0826;
+}
+#article-2-description {
+    font-weight: 700;
+    color: #6C6C6C;
+}
+#article-2-btn {
+    background-color: #E02C6D;
+    font-weight: 700;
+    border: 0;
+    border-radius: 2px;
+    padding: 6px 24px;
+}
+#article-2-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 /*------------------------------------
         End Main Section CSS 
@@ -304,6 +331,15 @@ header article {
         left: 0;
         text-align: end;
     }
+
+    /*----- article-2 -----*/
+    #article-2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-direction: column;
+        margin: 100px 10px;
+    }
 }
 
 /*----------------------------------------
@@ -367,6 +403,14 @@ header article {
         position: relative;
         left: 0;
         text-align: end;
+    }
+
+    /*----- article-2  ------*/
+    #article-2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        margin: 100px 10px;
     }
 }
 
