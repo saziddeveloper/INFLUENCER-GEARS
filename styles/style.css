@@ -357,6 +357,7 @@ footer aside section:last-child p a {
     }
     .popular-collection-item {
         padding: 10px 30px;
+        margin: 0 auto;
     }
     #popular-collection-btn {
         position: relative;
